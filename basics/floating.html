@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floating elements</title>
+    
+		<style>
+			.floatimage{
+				Padding: 20px;
+				Border:1px solid (box)#333;
+			}
+			/* clearfix */
+			.floatimage::after {
+				Content: "";
+				Clear: both;
+				Display: table;
+			}
+			.floatimage img {
+				Width: 200px;
+				Float: right;
+			}
+			.divFloat {
+				Background-color: #333;
+				Width: 33.3333%;
+				Height: 200px;
+				Float: left;
+			}
+			.float2 { background-color: #ccc; }
+		</style>
+
+</head>
+<body>
+    <div class="float image">  
+        <img src= “By Herwig Kavallar - Originally uploaded by <a href="//commons.wikimedia.org/w/index.php?title=User:Hand&amp;action=edit&amp;redlink=1" class="new" title="User:Hand (page does not exist)">Hand</a>; Renamed; Original description: own work. Original description page is/was <a href="//commons.wikimedia.org/w/index.php?title=File:Afra_012.jpg&amp;action=edit&amp;redlink=1" class="new" title="File:Afra 012.jpg (page does not exist)">here</a>, Public Domain, </a> href="https://commons.wikimedia.org/w/index.php?curid=7589161">Link</a>" alt="golden retreiver"> <p>
+</div>
+<div class="divFloat"></div>
+<div class="divFloat"></div>
+<div class="divFloat"></div>
+
+</body>
+</html>

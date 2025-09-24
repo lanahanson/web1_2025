@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive layout</title>
+</head>
+<body>
+    <style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			Font-family: verdana, geneva, tahoma, sans-serif;
+			Margin: 0;
+		}
+		header {
+			Background-color: #76cbe6;
+			Padding: 60px;
+			Color: #333;
+			Text-align: center;
+		}
+Nav {
+	Display: flex;
+	Background-color: #055f7a;
+}	
+Nav a {
+	Padding: 14px 20px;
+	Color: #fff;
+	Text-decoration: none;
+	Text-align: center;
+}
+Nav a:hover {
+	Background-color: #002631;
+	Color: #fff;
+}
+.flex {
+	Display: flex;
+	Flex-wrap: wrap;
+}
+Aside{
+Flex: 30%;
+Background-color: #efefef;
+Padding: 20px;
+}
+Main {
+	Flex: 70%;
+	Padding: 20px;
+}
+.fake_image {
+	Background-color: #333;
+	Width: 100%;
+	Padding: 20px;
+	Color: #ccc;
+}
+Footer {
+	Padding: 20px;
+	Background-color: #002631;
+	Color: #fff;
+	Text-align: center;
+}
+@media screen and (max-width: 700px) {
+	Nav,
+	.flex {
+		Flex-direction: column;
+	}
+}
+	</style>
+</body>
+</html>
+    <header>
+        <h1> responsive layout </h1>
+		<p> resize your browser to see this page respond!</p>
+    </header>
+    <nav>
+		<a href="#">link</a>
+		<a href="#">link</a>
+		<a href="#">link</a>
+		<a href="#">link</a>
+	</nav>
+    <div class="flex">
+		<aside>
+			<h2>about me</h2>
+			<h5>photo of me</h5>
+			<div class="fake_image" style="height: 200px">image</div>
+			<p> hhuhue fbskkmsk sjnshs susn shhshs hshs iddjj sjjsjjs jsisjsi hs. </p>
+
+			<h3>sub header</h3>
+			<p>hhuhue fbskkmsk sjnshs susn shhshs hshs iddjj sjjsjjs jsisjsi hs hhhdhjshsh udiwij didnwhy uuiie iindjduw.</p>
+
+			<div class="fake_image" style="height: 75px;">image</div>
+			<div class="fake_image"style="height: 75px;">image</div>
+			<div class="fake_image"style="height: 75px;">image</div>
+		</aside>
+
+		<main>
+			<h2>title heading</h2>
+			<h5>title description <span>september 11th, 2025</span></h5>
+			<div class="fake_image">image</div>
+			<p>nsjdjjc jxnnx jsjxj jjxjj ususjs sjjsj sjsis sijsjsjs jsnsnjid jwjsjsinw sjjsnwhd uhsojus ushshhsj sjjs.</p>
+			<p>snjsjsjns jsnshw sh sn jdkkdsnn snjsjs nnsns hsns sndnsmdmd nnsn smdm sbs nn s s nsnmsmms nmsms m sss.</p>
+			<p>hsjjsjs hsnsnns hxnnsnsjhs shbsbx xm nsnshnsjxj snnsnsmsjn nsnsn dnns knx  s nsnnsn nsns msm.</p>
+		</main>
+	</div>
+
+	<footer>
+		<h3>this is my foot</h3>
+	</footer>
+</body>
+</html>

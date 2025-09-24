@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+		H1 {font-size: 82pt;}
+
+		Div {
+			Background-color: #ccc;
+			Margin: 24px;
+			Width: calc(25% - 48px);
+			Height: 200px;
+			Float: left;
+		}
+		@media screen and (max-width: 900px) {
+			H1 {font-size: 82pt;}
+			Div {
+				Background-color: #00c;
+				Margin: 12px;
+				Width: calc(25% - 24px);
+			}
+		}
+		@media screen and (max-width: 600px) {
+			H1 {font-size: 82pt;}
+			Div{
+				Float: none;
+				Background-color: #c00;
+				Width: calc(100% -24px)
+			}
+		}
+	</style>
+
+</head>
+<body>
+    <div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
