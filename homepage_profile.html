@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=divice-width, initial-scale=1.0">
+    <title>Lana Hanson's Dev portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<style>
+    body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff7e6;
+    color: #043b4a;
+}
+
+header {
+    background-color: #0098a6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1.5rem 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+   color: white;
+   text-decoration: none; 
+   font-weight: bold;
+   border-bottom: 3px solid transparent;
+}
+
+nav a:hover{
+    border-bottom: 3px solid white;
+}
+
+#intro{
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.prodject-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.prodject-card{
+    background-color: #0098a6;
+    color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.prodject-card:hover {
+    transform: translateY(-5PX);
+}
+
+.prodject-card a{
+    color: #cceeff;
+    text-decoration: underline;
+}
+
+.frontend-section{
+    background-color: #e1ffff;
+    color: #043b4a;
+}
+
+.frontend-section .prodject-card{
+    background-color: #043b4a;
+    color: white;
+}
+
+footer{
+    background-color: #0098a6;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer a{
+    color: #e1ffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+</style>
+
+
+
+<body>
+    <header>
+        <h1>Lana Hanson</h1>
+        <nav>
+            <ul>
+                <a href="#class-prodjects">Prodjects</a>
+                <a href="#frontend-prodjecs">Frontend</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome!</h2>
+            <p>
+                Hello! im Lana Hanson. This website showcase my web developement prodjects and learning journy through HTML, CSS, and frontend design.
+            </p>
+            </section>
+
+            <section id="class-prodjects" class="prodject-section">
+                <h2>Class Prodjects</h2>
+                <div class="prodject-grid">
+                    <article class="prodject-card">
+                        <img src="img/">
+                        <h3>Prodject 1: The Basic Bio Page</h3>
+                        <p>Demonstrated basic HTML structure and text formatting.</p>
+                        <a href="#" target="_blank">View Prodject</a>
+                    </article>
+
+                    <article class="prodject-card">
+                        <img src="img/">
+                        <h3>Project 2: CSS Lab</h3>
+                        <p>Practiced CSS styling, color schemes. and typeograghy.</p>
+                        <a href="#" target="_blank">Veiw Prodject</a>
+                    </article>
+
+                    <article class="prodject-card">
+                        <img src="img/">
+                        <h3>Prodject 3: Flexbox Layout</h3>
+                        <p>Used Flexbox to create responsive. flexible layouts.</p>
+                        <a href="#" target="_blank">Veiw Prodject</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="frontend-prodjects" class="frontend-section">
+                <h2>FrontendMentor Prodjects</h2>
+                <div class="prodject-grid">
+                    <article class="prodject-card">
+                        <img src="img/">
+                        <h3>Perfect Meal</h3>
+                        <p>Focused on layout balance using CSS Grid</p>
+                        <a href="FrontendMentor/" target="_blank">Veiw Prodject</a>
+                    </article>
+
+                    <article class="prodject-card">
+                        <img src="img/">
+                        <h3>Wireframe</h3>
+                        <p>Explored how to design a responsive webpage.</p>
+                        <a href="FrontendMentor/social_links_profile/index.html" target="_blank">Veiw Prodject</a>
+                    </article>
+
+                    <article class="prodject-card">
+                        <h3>All FrontendMentor Prodjects</h3>
+                        <p>Demonstrates growth through multiple frontend challenges.</p>
+                        <a href="FrontendMentor/3_column_layout/index.html" target="_blank">Veiw Prodject</a>
+                    </article>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 Lana Hanson</p>
+    </footer>
+
+</body>
+</html>
