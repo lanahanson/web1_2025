@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!--Karla font--> 
+  <link href="https:///fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"
+</head>
+<body>
+  <main class="card">
+    <setion class="header">
+      <p class="guarantee">30-day, hassle-free money back guarantee</p>
+      <p class="description">
+         Gain access to our full library of tutorials along with expert code reviews. 
+  Perfect for any developers who are serious about honing their skills.
+      </p>
+    </setion>
+    
+    <section class="subscription">
+      <h2>Monthly Subscription</h2>
+
+      <div class="price-row">
+        <span class="price">$29</span>
+        <span class="per">per month</span>
+      </div>
+      <p class="note">Full access for less than $1 a day</p>
+      <button class="btn">Sign Up</button>
+    </section>
+
+    <section class="why-us">
+      <h2>Why Us</h2>
+      <ul>
+        <li>Tutorials by industry experts</li>
+        <li>Peer & expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
+
+<style>
+:root{
+      --teal-500: hsl(179, 62%, 43%);
+      --green-400: hsl(71, 73%, 54%);
+      --teal-100: hsl(204, 43%, 93%);
+      --grey-500: hsl(218, 22%, 67%);
+      --font-body:'Karla', sans-serif;
+      --radius: 8px;
+    }
+
+    body{
+      font-family: var(--font-body);
+      line-height: 1.6;
+      padding: 2rem;
+      display: flex;
+      margin: 0;
+      background: var(--teal-100);
+      color: #383232;
+      justify-content: center;
+    }
+
+    .card{
+      background:white;
+      max-width: 700px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.01);
+    }
+
+    .header{
+      padding: 2.5rem;
+    }
+
+    header h1{
+      color:  var(--teal-500);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .guarantee{
+      color: var(--green-400);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .description{
+      color: var(--gray-500);
+      max-width: 550px;
+    }
+
+    .subscription{
+      background: var(--teal-500);
+      padding: 2.5rem;
+    }
+
+    .subscription h2{
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .price-row{
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .price{
+      font-size: 2.5rem;
+      font-weight:700;
+    }
+    .per{
+      color: var(--teal-100);
+    }
+    .note{
+      margin: 1rem 0 2rem;
+    }
+    .btn{
+      background: var(--green-400);
+      border: none;
+      width: 100%;
+      padding: 1rem;
+      color: var(--teal-500);
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .btn:hover,
+    .btn:focus {
+      background: hsl(71, 73%, 48%)
+    }
+    .why-us{
+      background: hsl(179,62%, 50%);
+      padding: 2.5rem;
+    }
+    .why-us h2{
+      margin-bottom: 1rem;
+    }
+
+    .why-us ul{
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    .why-us li{
+      margin-bottom: 0.5rem;
+      color: var(--teal-100);
+    }
+
+    @media (min-width: 700px) {
+      .subscription,
+      .why-us {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+      }
+
+      .subscription{
+        border-right: 1px solid rgba(255,255,255,0.2);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+   
+     
